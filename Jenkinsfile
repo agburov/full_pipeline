@@ -22,8 +22,7 @@ pipeline {
                  script{
                         dir("${environment}")
                         {
-                            git url: 'https://github.com/agburov/full_pipeline', branch: 'master',
-                            credentialsId: 'github_creds'
+                            git "https://github.com/agburov/full_pipeline.git"
                         }
                     }
                 }
